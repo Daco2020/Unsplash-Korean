@@ -16,6 +16,14 @@ app = FastAPI()
 templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
+@app.get("/", response_class=HTMLResponse)
+async def root(request: Request):
+    return templates.TemplateResponse(
+        "./item.html",
+        {"request": request},
+    )
+
+
 @app.get("/search", response_class=HTMLResponse)
 async def search(request: Request, q: str):
     word = translate_word(q, CLIENT_ID, CLIENT_SECRET)
