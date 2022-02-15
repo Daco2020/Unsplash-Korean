@@ -1,8 +1,9 @@
 import urllib.request
 import json
+from app.config import NAVER_API_ID, NAVER_API_SECRET
 
 
-def translate_word(word, CLIENT_ID, CLIENT_SECRET):
+def translate_word(word):
     if not word:
         return "검색어를 입력해주세요 :)"
 
@@ -10,8 +11,8 @@ def translate_word(word, CLIENT_ID, CLIENT_SECRET):
     data = "source=ko&target=en&text=" + encText
     url = "https://openapi.naver.com/v1/papago/n2mt"
     request = urllib.request.Request(url)
-    request.add_header("X-Naver-Client-Id", CLIENT_ID)
-    request.add_header("X-Naver-Client-Secret", CLIENT_SECRET)
+    request.add_header("X-Naver-Client-Id", NAVER_API_ID)
+    request.add_header("X-Naver-Client-Secret", NAVER_API_SECRET)
     response = urllib.request.urlopen(request, data=data.encode("utf-8"))
     rescode = response.getcode()
 
