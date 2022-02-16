@@ -1,6 +1,6 @@
 ## 'Unsplash korean'
 'Unsplash'사이트의 이미지를 한글로 검색하여 가져오는 웹 서비스 입니다. </br>
-[![Unsplash 한글 검색기](![image](https://user-images.githubusercontent.com/76890895/154288593-acbc3ba9-59d0-4d87-8eb6-629b5ed2f267.png))](https://youtu.be/m61ROPZI9nQ)
+[![Unsplash 한글 검색기](https://user-images.githubusercontent.com/76890895/154288593-acbc3ba9-59d0-4d87-8eb6-629b5ed2f267.png)](https://youtu.be/m61ROPZI9nQ)
 
 ## 사용기술
 언어 : Python </br>
