@@ -1,7 +1,8 @@
+import random
+from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from pathlib import Path
 from app.models import mongodb
 from app.models.keword import KeywordModel
 from app.util.translation import translate_word
@@ -28,10 +29,11 @@ async def root(request: Request):
 @app.get("/search", response_class=HTMLResponse)
 async def search(request: Request, q: str):
     word = translate_word(q)
-    img_url = get_image(word)
+    image_url_list = get_image(word)
+    random.shuffle(image_url_list)
     return templates.TemplateResponse(
         "./index.html",
-        {"request": request, "title": "콜렉터 덕순이", "keyword": word, "img_url": img_url},
+        {"request": request, "title": "Unsplash 한글 검색기", "keyword": word, "image_url_list": image_url_list},
     )
 
 
