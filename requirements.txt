@@ -1,6 +1,40 @@
-fastapi==0.73.0
-uvicorn
+aiofiles==0.8.0
 aiohttp==3.7.3
-requests
-odmantic
-beautifulsoup4
+anyio==3.5.0
+appdirs==1.4.4
+asgiref==3.5.0
+async-timeout==3.0.1
+attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
+beautifulsoup4==4.10.0
+black==22.1.0
+certifi==2021.10.8
+chardet==3.0.4
+charset-normalizer==2.0.12
+click==8.0.3
+dnspython==2.2.0
+fastapi==0.73.0
+h11==0.13.0
+idna==3.3
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+motor==2.3.1
+multidict==6.0.2
+mypy-extensions==0.4.3
+odmantic==0.3.5
+pathspec==0.9.0
+platformdirs==2.5.0
+pydantic==1.8.2
+pymongo==3.12.3
+PyMySQL==1.0.2
+regex @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/croot-325xby49/regex_1642021452041/work
+requests==2.27.1
+sniffio==1.2.0
+soupsieve==2.3.1
+starlette==0.17.1
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+tomli==2.0.1
+typed-ast @ file:///opt/concourse/worker/volumes/live/aeacb77e-3cbc-4636-47b8-620b0c4008b5/volume/typed-ast_1624953685731/work
+typing_extensions==4.0.1
+urllib3==1.26.8
+uvicorn==0.17.4
+yarl==1.7.2
