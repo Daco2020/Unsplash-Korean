@@ -1,8 +1,9 @@
-## 'Unsplash korean'
-'Unsplash'사이트의 이미지를 한글로 검색하여 가져오는 웹 서비스 입니다. </br> </br> </br>
+# 한글 이미지 검색기
+'Unsplash'사이트의 이미지를 한글로 검색하여 가져오는 웹 서비스 입니다. <div><h3>[사이트 링크](http://3.12.198.223:8000/)</h3></div> </br> </br> </br>
+ 시연영상
 [![Unsplash 한글 검색기](https://user-images.githubusercontent.com/76890895/154288593-acbc3ba9-59d0-4d87-8eb6-629b5ed2f267.png)](https://youtu.be/m61ROPZI9nQ)
  </br>
- 시연영상
+
  </br>
   </br>
    </br>
@@ -11,6 +12,7 @@
 언어 : Python </br>
 프레임워크 : FastAPI, Uvicorn</br>
 데이터베이스 : MongoDB, ODMantic</br>
+배포 : AWS-EC2
 </br>
 ## 주요과제 
 - [x] 쿼리에서 키워드 받아오기</br>
